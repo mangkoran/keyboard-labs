@@ -291,8 +291,6 @@ F 3 "~" H 10450 4150 50  0001 C CNN
 	1    10450 4150
 	0    1    1    0   
 $EndComp
-Text Label 5000 2900 1    50   ~ 0
-RGB_DIN_5V
 Wire Wire Line
 	5200 3600 5600 3600
 Connection ~ 5600 3600
@@ -324,10 +322,10 @@ $EndComp
 Wire Wire Line
 	5000 3200 5300 3200
 $Comp
-L Jumper:SolderJumper_3_Open JP1
+L Jumper:SolderJumper_3_Open JP4
 U 1 1 60FF4E5E
 P 4050 6900
-F 0 "JP1" V 4050 6968 50  0000 L CNN
+F 0 "JP4" V 4050 6968 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 4095 6968 50  0001 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 4050 6900 50  0001 C CNN
 F 3 "~" H 4050 6900 50  0001 C CNN
@@ -335,10 +333,10 @@ F 3 "~" H 4050 6900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP2
+L Jumper:SolderJumper_3_Open JP5
 U 1 1 60FF5D91
 P 4050 7500
-F 0 "JP2" V 4050 7568 50  0000 L CNN
+F 0 "JP5" V 4050 7568 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 4095 7568 50  0001 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 4050 7500 50  0001 C CNN
 F 3 "~" H 4050 7500 50  0001 C CNN
@@ -389,49 +387,49 @@ F 3 "" H 2800 7500 60  0001 C CNN
 	1    2650 7500
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2500 2700
-NoConn ~ 2500 2800
-NoConn ~ 2500 2900
-Text Label 2500 2200 0    50   ~ 0
+NoConn ~ 1400 2550
+NoConn ~ 1400 2650
+NoConn ~ 1400 2750
+Text Label 1400 2050 0    50   ~ 0
 SW43
-Text Label 2500 2100 0    50   ~ 0
+Text Label 1400 1950 0    50   ~ 0
 SW42
-Text Label 2500 2000 0    50   ~ 0
+Text Label 1400 1850 0    50   ~ 0
 SW41
-Text Label 2500 1900 0    50   ~ 0
+Text Label 1400 1750 0    50   ~ 0
 SW35
-Text Label 2500 1800 0    50   ~ 0
+Text Label 1400 1650 0    50   ~ 0
 SW34
-Text Label 2500 1700 0    50   ~ 0
+Text Label 1400 1550 0    50   ~ 0
 SW33
-Text Label 2500 1600 0    50   ~ 0
+Text Label 1400 1450 0    50   ~ 0
 SW32
-Text Label 2500 2400 0    50   ~ 0
+Text Label 1400 2250 0    50   ~ 0
 SW31
-Text Label 2500 1400 0    50   ~ 0
-SW25
-Text Label 900  2200 2    50   ~ 0
+Text Label 1400 1250 0    50   ~ 0
+RESET_or_SW25
+Text Label 900  2050 2    50   ~ 0
 SW24
-Text Label 900  2100 2    50   ~ 0
+Text Label 900  1950 2    50   ~ 0
 SW23
-Text Label 900  2000 2    50   ~ 0
+Text Label 900  1850 2    50   ~ 0
 SW22
-Text Label 900  2300 2    50   ~ 0
+Text Label 900  2150 2    50   ~ 0
 SW21
-Text Label 2500 2300 0    50   ~ 0
+Text Label 1400 2150 0    50   ~ 0
 SW15
-Text Label 900  1700 2    50   ~ 0
+Text Label 900  1550 2    50   ~ 0
 SW14
-Text Label 900  1600 2    50   ~ 0
+Text Label 900  1450 2    50   ~ 0
 SW13
-Text Label 900  1500 2    50   ~ 0
+Text Label 900  1350 2    50   ~ 0
 SW12
-Text Label 900  1400 2    50   ~ 0
+Text Label 900  1250 2    50   ~ 0
 SW11
-NoConn ~ 2500 3000
-Text Label 900  2500 2    50   ~ 0
+NoConn ~ 1400 2850
+Text Label 900  2350 2    50   ~ 0
 SDA_RX
-Text Label 900  2400 2    50   ~ 0
+Text Label 900  2250 2    50   ~ 0
 SCL_TX
 Wire Wire Line
 	5200 2800 5200 2900
@@ -443,9 +441,9 @@ Text Label 1450 7100 2    50   ~ 0
 5V
 Text Label 1450 7400 2    50   ~ 0
 GND
-Text Label 2500 1300 0    50   ~ 0
+Text Label 1400 1150 0    50   ~ 0
 3V3
-Text Label 2500 1200 0    50   ~ 0
+Text Label 1400 1050 0    50   ~ 0
 GND
 $Comp
 L Device:R R1
@@ -765,9 +763,6 @@ Text Notes 9150 3150 0    50   ~ 0
 Grid of WS2812-compatible RGB LEDs,\narranged in the same order as the key switches.\n\nEach DOUT connects to the DIN of the next LED.
 Text Notes 700  650  0    50   ~ 0
 The WeAct Studo MiniF4 dev board.
-NoConn ~ 2500 1500
-NoConn ~ 900  1800
-NoConn ~ 900  1900
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 602E59E6
@@ -857,7 +852,6 @@ Wire Wire Line
 Connection ~ 3850 7500
 Wire Wire Line
 	3850 7500 3750 7500
-NoConn ~ 2500 2600
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 603C44C9
@@ -1020,11 +1014,7 @@ Connection ~ 9200 4350
 Wire Wire Line
 	9200 4950 9200 5550
 Connection ~ 9200 4950
-Text Label 3650 2000 2    50   ~ 0
-5V
-Text Label 2500 1100 0    50   ~ 0
-5V
-Text Label 2500 2500 0    50   ~ 0
+Text Label 1400 2350 0    50   ~ 0
 RGB_DIN_3V3
 $Comp
 L Connector:Conn_01x04_Female TP2
@@ -1066,38 +1056,6 @@ Text Label 8900 5850 0    50   ~ 0
 DOUT_BL
 Text Label 5400 7550 2    50   ~ 0
 DOUT_BL
-Text Label 3950 1800 2    50   ~ 0
-RGB_DIN_3V3
-Text Label 4350 2200 3    50   ~ 0
-GND
-Text Label 4250 1400 1    50   ~ 0
-3V3
-Text Label 4450 1400 1    50   ~ 0
-5V
-Text Label 4750 1800 0    50   ~ 0
-RGB_DIN_5V
-$Comp
-L Device:R R3
-U 1 1 603F5BAE
-P 3800 2000
-F 0 "R3" H 3870 2000 50  0000 L CNN
-F 1 "2.2k - 10k" H 3870 1955 50  0000 L TNN
-F 2 "ProjectLocal:Resistor-Hybrid" V 3730 2000 50  0001 C CNN
-F 3 "~" H 3800 2000 50  0001 C CNN
-	1    3800 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Logic_LevelTranslator:SN74LVC1T45DBV U2
-U 1 1 603EC747
-P 4350 1800
-F 0 "U2" H 4700 2050 50  0000 L CNN
-F 1 "SN74LVC1T45DBV" H 4700 1950 50  0000 L CNN
-F 2 "ProjectLocal:SOT-23-6_Handsoldering_Reversible" H 4350 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 3450 1150 50  0001 C CNN
-	1    4350 1800
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	3000 500  3000 3350
 Wire Notes Line
@@ -1126,22 +1084,11 @@ Text Label 1450 4050 0    50   ~ 0
 SW_RE
 Text Label 1450 4250 0    50   ~ 0
 GND
-$Comp
-L ProjectLocal:MiniF4 U1
-U 1 1 5FD347E3
-P 1700 2000
-F 0 "U1" H 1700 3165 50  0000 C CNN
-F 1 "MiniF4" H 1700 3074 50  0000 C CNN
-F 2 "ProjectLocal:WeAct_MiniF4_ZigZag" H 3950 2450 50  0001 C CNN
-F 3 "" V 2350 1150 50  0001 C CNN
-	1    1700 2000
-	1    0    0    -1  
-$EndComp
-Text Label 900  1100 2    50   ~ 0
+Text Label 900  950  2    50   ~ 0
 RE_A
-Text Label 900  1200 2    50   ~ 0
+Text Label 900  1050 2    50   ~ 0
 RE_B
-Text Label 900  1300 2    50   ~ 0
+Text Label 900  1150 2    50   ~ 0
 SW_RE
 Wire Notes Line
 	11200 1250 9000 1250
@@ -1174,10 +1121,10 @@ F 3 "~" H 4450 3700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP3
+L Jumper:SolderJumper_2_Open JP6
 U 1 1 60528B37
 P 2450 4450
-F 0 "JP3" H 2450 4563 50  0000 C CNN
+F 0 "JP6" H 2450 4563 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 4564 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2450 4450 50  0001 C CNN
 F 3 "~" H 2450 4450 50  0001 C CNN
@@ -1187,10 +1134,10 @@ $EndComp
 Text Notes 1850 3800 0    50   ~ 0
 OLED module with I2C.\nPins are GND, VCC, SCL, SDA.\nHowever, since the board is reversible, and it’s easier\nto use the same 01x04 pins on the PCB,\nthe connections each have to be jumped.
 $Comp
-L Jumper:SolderJumper_2_Open JP4
+L Jumper:SolderJumper_2_Open JP7
 U 1 1 6052FAA5
 P 2450 4700
-F 0 "JP4" H 2450 4813 50  0000 C CNN
+F 0 "JP7" H 2450 4813 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 4814 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2450 4700 50  0001 C CNN
 F 3 "~" H 2450 4700 50  0001 C CNN
@@ -1198,10 +1145,10 @@ F 3 "~" H 2450 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP5
+L Jumper:SolderJumper_2_Open JP8
 U 1 1 6053034C
 P 2450 4950
-F 0 "JP5" H 2450 5063 50  0000 C CNN
+F 0 "JP8" H 2450 5063 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 5064 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2450 4950 50  0001 C CNN
 F 3 "~" H 2450 4950 50  0001 C CNN
@@ -1209,10 +1156,10 @@ F 3 "~" H 2450 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP6
+L Jumper:SolderJumper_2_Open JP9
 U 1 1 60530B58
 P 2450 5200
-F 0 "JP6" H 2450 5313 50  0000 C CNN
+F 0 "JP9" H 2450 5313 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 5314 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2450 5200 50  0001 C CNN
 F 3 "~" H 2450 5200 50  0001 C CNN
@@ -1220,10 +1167,10 @@ F 3 "~" H 2450 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP7
+L Jumper:SolderJumper_2_Open JP10
 U 1 1 60552AED
 P 3800 4450
-F 0 "JP7" H 3800 4563 50  0000 C CNN
+F 0 "JP10" H 3800 4563 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 3800 4564 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 4450 50  0001 C CNN
 F 3 "~" H 3800 4450 50  0001 C CNN
@@ -1231,10 +1178,10 @@ F 3 "~" H 3800 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP8
+L Jumper:SolderJumper_2_Open JP11
 U 1 1 60553356
 P 3800 4700
-F 0 "JP8" H 3800 4813 50  0000 C CNN
+F 0 "JP11" H 3800 4813 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 3800 4814 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 4700 50  0001 C CNN
 F 3 "~" H 3800 4700 50  0001 C CNN
@@ -1242,10 +1189,10 @@ F 3 "~" H 3800 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP9
+L Jumper:SolderJumper_2_Open JP12
 U 1 1 60553C5A
 P 3800 4950
-F 0 "JP9" H 3800 5063 50  0000 C CNN
+F 0 "JP12" H 3800 5063 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 3800 5064 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 4950 50  0001 C CNN
 F 3 "~" H 3800 4950 50  0001 C CNN
@@ -1253,10 +1200,10 @@ F 3 "~" H 3800 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP10
+L Jumper:SolderJumper_2_Open JP13
 U 1 1 605571DE
 P 3800 5200
-F 0 "JP10" H 3800 5313 50  0000 C CNN
+F 0 "JP13" H 3800 5313 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 3800 5314 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 5200 50  0001 C CNN
 F 3 "~" H 3800 5200 50  0001 C CNN
@@ -1365,9 +1312,9 @@ Wire Notes Line
 	500  5350 4800 5350
 Text Notes 500  4600 0    50   ~ 0
 Pull OLED I2C up.
-Text Label 900  2700 2    50   ~ 0
+Text Label 900  2550 2    50   ~ 0
 OLED_SDA
-Text Label 900  2600 2    50   ~ 0
+Text Label 900  2450 2    50   ~ 0
 OLED_SCL
 $Comp
 L Mechanical:MountingHole H11
@@ -1838,4 +1785,144 @@ Wire Notes Line
 	9600 3200 9600 6500
 Text Notes 9650 3450 0    50   ~ 0
 Decoupling capacitors\nfor the RGB LEDs
+$Comp
+L Connector_Generic:Conn_02x20_Top_Bottom U1
+U 1 1 60A4D43E
+P 1100 1850
+F 0 "U1" H 1150 2967 50  0000 C CNN
+F 1 "Conn_02x20_Top_Bottom" H 1150 2876 50  0000 C CNN
+F 2 "ProjectLocal:DIP40_Reversible_ZigZag" H 1100 1850 50  0001 C CNN
+F 3 "~" H 1100 1850 50  0001 C CNN
+	1    1100 1850
+	1    0    0    -1  
+$EndComp
+Text Label 900  2650 2    50   ~ 0
+5V
+Text Label 900  2750 2    50   ~ 0
+GND
+Text Label 900  2850 2    50   ~ 0
+3V3
+NoConn ~ 900  1650
+NoConn ~ 900  1750
+Text Label 1400 950  0    50   ~ 0
+GND_or_5V
+Text Label 1400 2450 0    50   ~ 0
+SW25_or_RESET
+Text Label 1400 1350 0    50   ~ 0
+NC_or_BOOT0
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 60A9D8CA
+P 2650 1500
+F 0 "JP1" V 2604 1568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 2695 1568 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2650 1500 50  0001 C CNN
+F 3 "~" H 2650 1500 50  0001 C CNN
+	1    2650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP2
+U 1 1 60A9F778
+P 2550 2200
+F 0 "JP2" V 2504 2268 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 2595 2268 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2550 2200 50  0001 C CNN
+F 3 "~" H 2550 2200 50  0001 C CNN
+	1    2550 2200
+	0    1    1    0   
+$EndComp
+Text Label 2500 1500 2    50   ~ 0
+RESET_or_SW25
+Text Label 2400 2200 2    50   ~ 0
+SW25_or_RESET
+Text Label 2650 1300 0    50   ~ 0
+RESET
+Text Label 2650 1700 0    50   ~ 0
+SW25
+Text Label 2550 2000 0    50   ~ 0
+SW25
+Text Label 2550 2400 0    50   ~ 0
+RESET
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 60AC60A4
+P 2400 2750
+F 0 "JP3" H 2400 2955 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2400 2864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2400 2750 50  0001 C CNN
+F 3 "~" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+Text Label 2250 2750 2    50   ~ 0
+NC_or_BOOT0
+Text Label 2550 2750 0    50   ~ 0
+BOOT0
+$Comp
+L Logic_LevelTranslator:SN74LVC1T45DBV U2
+U 1 1 603EC747
+P 4700 1450
+F 0 "U2" H 5050 1700 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 5050 1600 50  0000 L CNN
+F 2 "ProjectLocal:SOT-23-6_Handsoldering_Reversible" H 4700 1000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 3800 800 50  0001 C CNN
+	1    4700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 603F5BAE
+P 4150 1650
+F 0 "R3" H 4220 1650 50  0000 L CNN
+F 1 "2.2k - 10k" H 4220 1605 50  0000 L TNN
+F 2 "ProjectLocal:Resistor-Hybrid" V 4080 1650 50  0001 C CNN
+F 3 "~" H 4150 1650 50  0001 C CNN
+	1    4150 1650
+	0    1    1    0   
+$EndComp
+Text Label 5100 1450 0    50   ~ 0
+RGB_DIN_5V
+Text Label 4800 1050 1    50   ~ 0
+5V
+Text Label 4600 1050 1    50   ~ 0
+3V3
+Text Label 4700 1850 3    50   ~ 0
+GND
+Text Label 4300 1450 2    50   ~ 0
+RGB_DIN_3V3
+Text Label 4000 1650 2    50   ~ 0
+5V
+Text Label 5000 2900 1    50   ~ 0
+RGB_DIN_5V
+$Comp
+L Switch:SW_Push SW_RESET1
+U 1 1 60AD9170
+P 3700 2700
+F 0 "SW_RESET1" H 3700 2985 50  0000 C CNN
+F 1 "SW_Push" H 3700 2894 50  0000 C CNN
+F 2 "ProjectLocal:switch_3x6" H 3700 2900 50  0001 C CNN
+F 3 "~" H 3700 2900 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW_BOOT0
+U 1 1 60ADC79E
+P 3700 3150
+F 0 "SW_BOOT0" H 3700 3435 50  0000 C CNN
+F 1 "SW_Push" H 3700 3344 50  0000 C CNN
+F 2 "ProjectLocal:switch_3x6" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3150
+	1    0    0    -1  
+$EndComp
+Text Label 3900 3150 0    50   ~ 0
+GND
+Text Label 3900 2700 0    50   ~ 0
+GND
+Text Label 3500 2700 2    50   ~ 0
+RESET
+Text Label 3500 3150 2    50   ~ 0
+BOOT0
 $EndSCHEMATC
