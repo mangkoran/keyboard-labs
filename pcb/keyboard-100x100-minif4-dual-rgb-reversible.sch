@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Reversible Split Keyboard Half"
-Date "2021-04-12"
-Rev "2021.4"
+Date "2021-05-21"
+Rev "2021.5"
 Comp "Richard Goulter"
 Comment1 "SK6812mini-e used for per-key RGBs. SK6812 for underglow."
 Comment2 "TRRS Jacks connected to UART or I2C."
@@ -1925,4 +1925,34 @@ Text Label 3500 2700 2    50   ~ 0
 RESET
 Text Label 3500 3150 2    50   ~ 0
 BOOT0
+$Comp
+L Device:C_Small C1
+U 1 1 60A83BEB
+P 10000 5950
+F 0 "C1" V 9863 5950 50  0000 C BNN
+F 1 "100nF" V 9862 5950 50  0000 C TNN
+F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 10000 5950 50  0001 C CNN
+F 3 "~" H 10000 5950 50  0001 C CNN
+	1    10000 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60A86C12
+P 10000 6250
+F 0 "C2" V 9863 6250 50  0000 C BNN
+F 1 "100nF" V 9862 6250 50  0000 C TNN
+F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 10000 6250 50  0001 C CNN
+F 3 "~" H 10000 6250 50  0001 C CNN
+	1    10000 6250
+	0    1    1    0   
+$EndComp
+Text Label 9900 5950 2    50   ~ 0
+RE_A
+Text Label 9900 6250 2    50   ~ 0
+RE_B
+Text Label 10100 5950 0    50   ~ 0
+GND
+Text Label 10100 6250 0    50   ~ 0
+GND
 $EndSCHEMATC
