@@ -313,7 +313,7 @@ L Device:R R4
 U 1 1 60D9AF80
 P 5000 3050
 F 0 "R4" H 4930 3096 50  0000 R CNN
-F 1 "300 - 500R" H 4930 3005 50  0000 R CNN
+F 1 "300 - 500R" V 4900 3050 50  0000 R CNN
 F 2 "ProjectLocal:Resistor-Hybrid" V 4930 3050 50  0001 C CNN
 F 3 "~" H 5000 3050 50  0001 C CNN
 	1    5000 3050
@@ -389,7 +389,6 @@ F 3 "" H 2800 7500 60  0001 C CNN
 $EndComp
 NoConn ~ 1400 2550
 NoConn ~ 1400 2650
-NoConn ~ 1400 2750
 Text Label 1400 2050 0    50   ~ 0
 SW43
 Text Label 1400 1950 0    50   ~ 0
@@ -404,10 +403,8 @@ Text Label 1400 1550 0    50   ~ 0
 SW33
 Text Label 1400 1450 0    50   ~ 0
 SW32
-Text Label 1400 2250 0    50   ~ 0
+Text Label 1400 2750 0    50   ~ 0
 SW31
-Text Label 1400 1250 0    50   ~ 0
-RESET_or_SW25
 Text Label 900  2050 2    50   ~ 0
 SW24
 Text Label 900  1950 2    50   ~ 0
@@ -475,8 +472,6 @@ F 3 "~" H 1500 5900 50  0001 C CNN
 	1    1500 5900
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	4800 2650 11200 2650
 Wire Notes Line
 	500  3350 4800 3350
 Text Label 6400 1950 3    50   ~ 0
@@ -1057,13 +1052,11 @@ DOUT_BL
 Text Label 5400 7550 2    50   ~ 0
 DOUT_BL
 Wire Notes Line
-	3000 500  3000 3350
-Wire Notes Line
 	4800 2650 4800 7800
 Wire Notes Line
 	5800 500  5800 2650
-Text Notes 3150 850  0    50   ~ 0
-Convert the voltage of the RGB_DIN_3V3 signal to 5V\nso that the SK6812mini-e and SK6812 receive the\nRGB data reliably.
+Text Notes 4050 800  0    50   ~ 0
+Convert the voltage of the RGB_DIN_3V3\nsignal to 5V so that the SK6812mini-e\nand SK6812 receive the RGB data reliably.
 Text Label 4200 7100 0    50   ~ 0
 SDA_RX_r
 Wire Wire Line
@@ -1095,7 +1088,7 @@ Wire Notes Line
 Wire Notes Line
 	9000 1250 9000 2650
 Text Notes 9050 1600 0    50   ~ 0
-Mechanical:\nH1-H5 for silkscreen hints for bumpons\n(and aid PCB layout),\nH6-H10 for holes for M2 spacers; H11-H15 M2 screws.
+Mechanical:\nH1-H5 for dwgs hints for bumpons\nto aid PCB layout,\nH6-H10 for holes for M2 spacers; H11-H15 M2 screws.
 Text Notes 550  3550 0    50   ~ 0
 Rotary encoder + switch.
 $Comp
@@ -1806,124 +1799,87 @@ NoConn ~ 900  1650
 NoConn ~ 900  1750
 Text Label 1400 950  0    50   ~ 0
 GND_or_5V
-Text Label 1400 2450 0    50   ~ 0
-SW25_or_RESET
-Text Label 1400 1350 0    50   ~ 0
-NC_or_BOOT0
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 60A9D8CA
-P 2650 1500
-F 0 "JP1" V 2604 1568 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 2695 1568 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2650 1500 50  0001 C CNN
-F 3 "~" H 2650 1500 50  0001 C CNN
-	1    2650 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP2
-U 1 1 60A9F778
-P 2550 2200
-F 0 "JP2" V 2504 2268 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 2595 2268 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2550 2200 50  0001 C CNN
-F 3 "~" H 2550 2200 50  0001 C CNN
-	1    2550 2200
-	0    1    1    0   
-$EndComp
-Text Label 2500 1500 2    50   ~ 0
+Text Label 2300 1250 3    50   ~ 0
 RESET_or_SW25
-Text Label 2400 2200 2    50   ~ 0
+Text Label 2300 2050 3    50   ~ 0
 SW25_or_RESET
-Text Label 2650 1300 0    50   ~ 0
+Text Label 2450 1050 0    50   ~ 0
 RESET
-Text Label 2650 1700 0    50   ~ 0
+Text Label 2450 1450 0    50   ~ 0
 SW25
-Text Label 2550 2000 0    50   ~ 0
+Text Label 2450 1850 0    50   ~ 0
 SW25
-Text Label 2550 2400 0    50   ~ 0
+Text Label 2450 2250 0    50   ~ 0
 RESET
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 60AC60A4
-P 2400 2750
-F 0 "JP3" H 2400 2955 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2400 2864 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2400 2750 50  0001 C CNN
-F 3 "~" H 2400 2750 50  0001 C CNN
-	1    2400 2750
-	1    0    0    -1  
-$EndComp
-Text Label 2250 2750 2    50   ~ 0
+Text Label 2350 2800 3    50   ~ 0
 NC_or_BOOT0
-Text Label 2550 2750 0    50   ~ 0
+Text Label 2650 2800 1    50   ~ 0
 BOOT0
 $Comp
 L Logic_LevelTranslator:SN74LVC1T45DBV U2
 U 1 1 603EC747
-P 4700 1450
-F 0 "U2" H 5050 1700 50  0000 L CNN
-F 1 "SN74LVC1T45DBV" H 5050 1600 50  0000 L CNN
-F 2 "ProjectLocal:SOT-23-6_Handsoldering_Reversible" H 4700 1000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 3800 800 50  0001 C CNN
-	1    4700 1450
+P 4750 1450
+F 0 "U2" H 5100 1700 50  0000 L CNN
+F 1 "SN74LVC1T45DBV" H 5100 1600 50  0000 L CNN
+F 2 "ProjectLocal:SOT-23-6_Handsoldering_Reversible" H 4750 1000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 3850 800 50  0001 C CNN
+	1    4750 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 603F5BAE
-P 4150 1650
-F 0 "R3" H 4220 1650 50  0000 L CNN
-F 1 "2.2k - 10k" H 4220 1605 50  0000 L TNN
-F 2 "ProjectLocal:Resistor-Hybrid" V 4080 1650 50  0001 C CNN
-F 3 "~" H 4150 1650 50  0001 C CNN
-	1    4150 1650
+P 4200 1650
+F 0 "R3" H 4270 1650 50  0000 L CNN
+F 1 "2.2k - 10k" H 4270 1605 50  0000 L TNN
+F 2 "ProjectLocal:Resistor-Hybrid" V 4130 1650 50  0001 C CNN
+F 3 "~" H 4200 1650 50  0001 C CNN
+	1    4200 1650
 	0    1    1    0   
 $EndComp
-Text Label 5100 1450 0    50   ~ 0
+Text Label 5150 1450 0    50   ~ 0
 RGB_DIN_5V
-Text Label 4800 1050 1    50   ~ 0
+Text Label 4850 1050 1    50   ~ 0
 5V
-Text Label 4600 1050 1    50   ~ 0
+Text Label 4650 1050 1    50   ~ 0
 3V3
-Text Label 4700 1850 3    50   ~ 0
+Text Label 4750 1850 3    50   ~ 0
 GND
-Text Label 4300 1450 2    50   ~ 0
+Text Label 4350 1450 1    50   ~ 0
 RGB_DIN_3V3
-Text Label 4000 1650 2    50   ~ 0
+Text Label 4050 1650 2    50   ~ 0
 5V
 Text Label 5000 2900 1    50   ~ 0
 RGB_DIN_5V
 $Comp
 L Switch:SW_Push SW_RESET1
 U 1 1 60AD9170
-P 3700 2700
-F 0 "SW_RESET1" H 3700 2985 50  0000 C CNN
-F 1 "SW_Push" H 3700 2894 50  0000 C CNN
-F 2 "ProjectLocal:switch_3x6" H 3700 2900 50  0001 C CNN
-F 3 "~" H 3700 2900 50  0001 C CNN
-	1    3700 2700
+P 3450 3250
+F 0 "SW_RESET1" H 3450 3535 50  0000 C CNN
+F 1 "SW_Push" H 3450 3444 50  0000 C CNN
+F 2 "ProjectLocal:switch_3x6" H 3450 3450 50  0001 C CNN
+F 3 "~" H 3450 3450 50  0001 C CNN
+	1    3450 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW_BOOT0
 U 1 1 60ADC79E
-P 3700 3150
-F 0 "SW_BOOT0" H 3700 3435 50  0000 C CNN
-F 1 "SW_Push" H 3700 3344 50  0000 C CNN
-F 2 "ProjectLocal:switch_3x6" H 3700 3350 50  0001 C CNN
-F 3 "~" H 3700 3350 50  0001 C CNN
-	1    3700 3150
+P 4350 3250
+F 0 "SW_BOOT0" H 4350 3535 50  0000 C CNN
+F 1 "SW_Push" H 4350 3444 50  0000 C CNN
+F 2 "ProjectLocal:switch_3x6" H 4350 3450 50  0001 C CNN
+F 3 "~" H 4350 3450 50  0001 C CNN
+	1    4350 3250
 	1    0    0    -1  
 $EndComp
-Text Label 3900 3150 0    50   ~ 0
+Text Label 4550 3250 0    50   ~ 0
 GND
-Text Label 3900 2700 0    50   ~ 0
+Text Label 3650 3250 0    50   ~ 0
 GND
-Text Label 3500 2700 2    50   ~ 0
+Text Label 3250 3250 2    50   ~ 0
 RESET
-Text Label 3500 3150 2    50   ~ 0
+Text Label 4150 3250 2    50   ~ 0
 BOOT0
 $Comp
 L Device:C_Small C1
@@ -1955,4 +1911,115 @@ Text Label 10100 5950 0    50   ~ 0
 GND
 Text Label 10100 6250 0    50   ~ 0
 GND
+$Comp
+L ProjectLocal:SolderJumper_3_Bridged23 JP1
+U 1 1 60B44562
+P 2450 1250
+F 0 "JP1" V 2404 1318 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged23" H 2050 1550 50  0001 L CNN
+F 2 "" H 2450 1250 50  0001 C CNN
+F 3 "~" H 2450 1250 50  0001 C CNN
+	1    2450 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L ProjectLocal:SolderJumper_3_Bridged23 JP2
+U 1 1 60B63938
+P 2450 2050
+F 0 "JP2" V 2404 2118 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged23" H 2150 2350 50  0001 L CNN
+F 2 "" H 2450 2050 50  0001 C CNN
+F 3 "~" H 2450 2050 50  0001 C CNN
+	1    2450 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 60B67A99
+P 2500 2800
+F 0 "JP3" H 2500 2913 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 2500 2914 50  0001 C CNN
+F 2 "" H 2500 2800 50  0001 C CNN
+F 3 "~" H 2500 2800 50  0001 C CNN
+	1    2500 2800
+	1    0    0    -1  
+$EndComp
+Text Label 1400 2250 0    50   ~ 0
+MOTOR_PWM
+Wire Notes Line
+	2100 500  2100 3350
+Wire Notes Line
+	2750 2650 11200 2650
+Wire Notes Line
+	3950 500  3950 2650
+Wire Notes Line
+	2750 500  2750 3350
+Wire Wire Line
+	3450 1750 3450 1850
+Text Label 3450 1850 0    50   ~ 0
+GND
+Wire Wire Line
+	3250 2500 3250 2550
+Text Label 3450 1350 0    50   ~ 0
+MOTOR_GND
+Text Label 3250 2550 0    50   ~ 0
+MOTOR_GND
+Text Label 2850 1550 1    50   ~ 0
+MOTOR_PWM
+Text Label 2950 2000 2    50   ~ 0
+5V
+$Comp
+L Device:R R7
+U 1 1 60B47E99
+P 3000 1550
+F 0 "R7" V 3100 1500 50  0000 L CNN
+F 1 "500R" H 3070 1505 50  0001 L TNN
+F 2 "ProjectLocal:Resistor-Hybrid" V 2930 1550 50  0001 C CNN
+F 3 "~" H 3000 1550 50  0001 C CNN
+	1    3000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60B4BAE0
+P 3100 2000
+F 0 "R8" V 3000 1950 50  0000 L CNN
+F 1 "500R" H 3170 1955 50  0001 L TNN
+F 2 "ProjectLocal:Resistor-Hybrid" V 3030 2000 50  0001 C CNN
+F 3 "~" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Motor:Motor_DC M1
+U 1 1 60B49FEF
+P 3250 2200
+F 0 "M1" H 3408 2196 50  0000 L CNN
+F 1 "Motor_DC" H 3408 2105 50  0000 L CNN
+F 2 "" H 3250 2110 50  0001 C CNN
+F 3 "~" H 3250 2110 50  0001 C CNN
+	1    3250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 60B4654A
+P 3350 1550
+F 0 "Q1" H 3541 1596 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3541 1505 50  0001 L CNN
+F 2 "" H 3550 1650 50  0001 C CNN
+F 3 "~" H 3350 1550 50  0001 C CNN
+	1    3350 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 2150 800  0    39   ~ 0
+Jumpers to allow\nconfiguring the\nkeyboard to use\nBluepill devboard
+Text Label 1400 1350 0    50   ~ 0
+NC_or_BOOT0
+Text Label 1400 2450 0    50   ~ 0
+SW25_or_RESET
+Text Label 1400 1250 0    50   ~ 0
+RESET_or_SW25
+Text Notes 2800 800  0    50   ~ 0
+Transistor to allow PWM\ncontrol of a simple\nDC vibration motor.
 $EndSCHEMATC

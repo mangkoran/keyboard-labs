@@ -15,4 +15,10 @@ D STM32 Blue Pill ; KLC compliant
 K module black pill STM32
 $ENDCMP
 #
+$CMP SolderJumper_3_Bridged23
+D 3-pole Solder Jumper, pins 2+3 closed/bridged
+K Solder Jumper SPDT
+F ~
+$ENDCMP
+#
 #End Doc Library
