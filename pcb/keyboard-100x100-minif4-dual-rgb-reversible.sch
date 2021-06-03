@@ -1756,13 +1756,13 @@ Text Label 3850 1750 3    50   ~ 0
 RESET_or_SW25
 Text Label 3850 2550 3    50   ~ 0
 SW25_or_RESET
-Text Label 4000 1550 0    50   ~ 0
-RESET
 Text Label 4000 1950 0    50   ~ 0
-SW25
-Text Label 4000 2350 0    50   ~ 0
+RESET
+Text Label 4000 1550 0    50   ~ 0
 SW25
 Text Label 4000 2750 0    50   ~ 0
+SW25
+Text Label 4000 2350 0    50   ~ 0
 RESET
 Text Label 3900 3300 3    50   ~ 0
 NC_or_BOOT0
@@ -1865,34 +1865,12 @@ GND
 Text Label 13900 9300 0    50   ~ 0
 GND
 $Comp
-L ProjectLocal:SolderJumper_3_Bridged23 JP1
-U 1 1 60B44562
-P 4000 1750
-F 0 "JP1" V 3954 1818 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged23" H 3600 2050 50  0001 L CNN
-F 2 "" H 4000 1750 50  0001 C CNN
-F 3 "~" H 4000 1750 50  0001 C CNN
-	1    4000 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L ProjectLocal:SolderJumper_3_Bridged23 JP2
-U 1 1 60B63938
-P 4000 2550
-F 0 "JP2" V 3954 2618 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged23" H 3700 2850 50  0001 L CNN
-F 2 "" H 4000 2550 50  0001 C CNN
-F 3 "~" H 4000 2550 50  0001 C CNN
-	1    4000 2550
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 60B67A99
 P 4050 3300
 F 0 "JP3" H 4050 3413 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 4050 3414 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4050 3300 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 4050 3300 50  0001 C CNN
 F 3 "~" H 4050 3300 50  0001 C CNN
 	1    4050 3300
 	1    0    0    -1  
@@ -1971,11 +1949,33 @@ U 1 1 60B9B38B
 P 1900 2050
 F 0 "U1" H 1900 3215 50  0000 C CNN
 F 1 "BluePill_or_MiniF4" H 1900 3124 50  0000 C CNN
-F 2 "ProjectLocal:WeAct_MiniF4" H 2400 3200 50  0001 C CNN
+F 2 "ProjectLocal:DIP40_Reversible_ZigZag" H 2400 3200 50  0001 C CNN
 F 3 "" V 2550 1200 50  0001 C CNN
 	1    1900 2050
 	1    0    0    -1  
 $EndComp
 Text Notes 5950 1150 0    50   ~ 0
 Transistor to allow PWM\ncontrol of a simple\nDC vibration motor.
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 60B92FC1
+P 4000 1750
+F 0 "JP1" V 3954 1818 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 4045 1818 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 4000 1750 50  0001 C CNN
+F 3 "~" H 4000 1750 50  0001 C CNN
+	1    4000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 60B93FDF
+P 4000 2550
+F 0 "JP2" V 3954 2618 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 4045 2618 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 4000 2550 50  0001 C CNN
+F 3 "~" H 4000 2550 50  0001 C CNN
+	1    4000 2550
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
