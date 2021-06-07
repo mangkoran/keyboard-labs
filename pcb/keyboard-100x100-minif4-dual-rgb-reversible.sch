@@ -1837,32 +1837,32 @@ BOOT0
 $Comp
 L Device:C_Small C1
 U 1 1 60A83BEB
-P 13800 9000
-F 0 "C1" V 13663 9000 50  0000 C BNN
-F 1 "100nF" V 13662 9000 50  0000 C TNN
-F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 13800 9000 50  0001 C CNN
-F 3 "~" H 13800 9000 50  0001 C CNN
-	1    13800 9000
+P 7850 9500
+F 0 "C1" V 7713 9500 50  0000 C BNN
+F 1 "100nF" V 7712 9500 50  0000 C TNN
+F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 7850 9500 50  0001 C CNN
+F 3 "~" H 7850 9500 50  0001 C CNN
+	1    7850 9500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 60A86C12
-P 13800 9300
-F 0 "C2" V 13663 9300 50  0000 C BNN
-F 1 "100nF" V 13662 9300 50  0000 C TNN
-F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 13800 9300 50  0001 C CNN
-F 3 "~" H 13800 9300 50  0001 C CNN
-	1    13800 9300
+P 7850 9800
+F 0 "C2" V 7713 9800 50  0000 C BNN
+F 1 "100nF" V 7712 9800 50  0000 C TNN
+F 2 "ProjectLocal:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Dual" H 7850 9800 50  0001 C CNN
+F 3 "~" H 7850 9800 50  0001 C CNN
+	1    7850 9800
 	0    1    1    0   
 $EndComp
-Text Label 13700 9000 2    50   ~ 0
+Text Label 7750 9500 2    50   ~ 0
 RE_A
-Text Label 13700 9300 2    50   ~ 0
+Text Label 7750 9800 2    50   ~ 0
 RE_B
-Text Label 13900 9000 0    50   ~ 0
+Text Label 7950 9500 0    50   ~ 0
 GND
-Text Label 13900 9300 0    50   ~ 0
+Text Label 7950 9800 0    50   ~ 0
 GND
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
