@@ -1282,9 +1282,9 @@ F 3 "~" H 1300 7750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1150 7400 2    50   ~ 0
-3V3
+5V
 Text Label 1150 7750 2    50   ~ 0
-3V3
+5V
 Text Label 1450 7400 0    50   ~ 0
 OLED_SCL
 Text Label 1450 7750 0    50   ~ 0
