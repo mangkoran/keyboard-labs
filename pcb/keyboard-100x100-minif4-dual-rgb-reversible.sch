@@ -389,13 +389,13 @@ F 3 "" H 2900 10850 60  0001 C CNN
 $EndComp
 NoConn ~ 2700 2750
 NoConn ~ 2700 2850
-Text Label 1100 2350 2    50   ~ 0
-SW43
-Text Label 1100 2250 2    50   ~ 0
-SW42
 Text Label 2700 2950 0    50   ~ 0
-SW41
+SW43
 Text Label 2700 2550 0    50   ~ 0
+SW42
+Text Label 2700 2350 0    50   ~ 0
+SW41
+Text Label 1100 2350 2    50   ~ 0
 SW35
 Text Label 2700 2150 0    50   ~ 0
 SW34
@@ -411,7 +411,7 @@ Text Label 1100 1550 2    50   ~ 0
 SW22
 Text Label 1100 1250 2    50   ~ 0
 SW21
-Text Label 2700 2350 0    50   ~ 0
+Text Label 1100 2150 2    50   ~ 0
 SW15
 Text Label 2700 2050 0    50   ~ 0
 SW14
@@ -1970,11 +1970,11 @@ F 3 "~" H 4000 2550 50  0001 C CNN
 	1    4000 2550
 	0    1    1    0   
 $EndComp
-Text Label 1100 2150 2    50   ~ 0
+Text Label 2700 2250 0    50   ~ 0
 RE_A
 Text Label 1100 1450 2    50   ~ 0
 SW12
-Text Label 2700 2250 0    50   ~ 0
+Text Label 1100 2250 2    50   ~ 0
 RE_B
 Text Label 1100 1750 2    50   ~ 0
 SW23
