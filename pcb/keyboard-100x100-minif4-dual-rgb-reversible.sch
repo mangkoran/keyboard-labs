@@ -389,39 +389,35 @@ F 3 "" H 2900 10850 60  0001 C CNN
 $EndComp
 NoConn ~ 2700 2750
 NoConn ~ 2700 2850
-Text Label 2700 2250 0    50   ~ 0
+Text Label 1100 2350 2    50   ~ 0
 SW43
-Text Label 2700 2150 0    50   ~ 0
+Text Label 1100 2250 2    50   ~ 0
 SW42
-Text Label 2700 2050 0    50   ~ 0
+Text Label 2700 2950 0    50   ~ 0
 SW41
-Text Label 2700 1950 0    50   ~ 0
+Text Label 2700 2550 0    50   ~ 0
 SW35
-Text Label 2700 1850 0    50   ~ 0
+Text Label 2700 2150 0    50   ~ 0
 SW34
-Text Label 2700 1750 0    50   ~ 0
+Text Label 2700 1950 0    50   ~ 0
 SW33
 Text Label 2700 1650 0    50   ~ 0
 SW32
-Text Label 2700 2950 0    50   ~ 0
+Text Label 1100 1350 2    50   ~ 0
 SW31
-Text Label 1100 2250 2    50   ~ 0
-SW24
-Text Label 1100 2150 2    50   ~ 0
-SW23
 Text Label 1100 2050 2    50   ~ 0
+SW24
+Text Label 1100 1550 2    50   ~ 0
 SW22
-Text Label 1100 2350 2    50   ~ 0
+Text Label 1100 1250 2    50   ~ 0
 SW21
 Text Label 2700 2350 0    50   ~ 0
 SW15
-Text Label 1100 1750 2    50   ~ 0
+Text Label 2700 2050 0    50   ~ 0
 SW14
 Text Label 1100 1650 2    50   ~ 0
 SW13
-Text Label 1100 1550 2    50   ~ 0
-SW12
-Text Label 1100 1450 2    50   ~ 0
+Text Label 1100 1150 2    50   ~ 0
 SW11
 NoConn ~ 2700 3050
 Text Label 1100 2550 2    50   ~ 0
@@ -1007,7 +1003,7 @@ Connection ~ 13000 7400
 Wire Wire Line
 	13000 8000 13000 8600
 Connection ~ 13000 8000
-Text Label 2700 2550 0    50   ~ 0
+Text Label 2700 1750 0    50   ~ 0
 RGB_DIN_3V3
 $Comp
 L Connector:Conn_01x04_Female TP2
@@ -1071,11 +1067,7 @@ Text Label 7100 10000 0    50   ~ 0
 SW_RE
 Text Label 7100 10200 0    50   ~ 0
 GND
-Text Label 1100 1150 2    50   ~ 0
-RE_A
-Text Label 1100 1250 2    50   ~ 0
-RE_B
-Text Label 1100 1350 2    50   ~ 0
+Text Label 2700 1850 0    50   ~ 0
 SW_RE
 Wire Notes Line
 	15000 4000 12800 4000
@@ -1978,4 +1970,12 @@ F 3 "~" H 4000 2550 50  0001 C CNN
 	1    4000 2550
 	0    1    1    0   
 $EndComp
+Text Label 1100 2150 2    50   ~ 0
+RE_A
+Text Label 1100 1450 2    50   ~ 0
+SW12
+Text Label 2700 2250 0    50   ~ 0
+RE_B
+Text Label 1100 1750 2    50   ~ 0
+SW23
 $EndSCHEMATC
